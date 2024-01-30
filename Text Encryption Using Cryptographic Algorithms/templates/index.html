@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption</title>
+</head>
+<body>
+    <h1>Text Encryption</h1>
+    <form action="{{ url_for('encrypt') }}" method="post">
+        <label for="data">Text:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Encrypt</button>
+    </form>
+    <form action="{{ url_for('decrypt') }}" method="post">
+        <label for="data">Encrypted Text:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Decrypt</button>
+    </form>
+</body>
+</html>
